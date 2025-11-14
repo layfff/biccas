@@ -1,0 +1,40 @@
+.hero-form {
+  background-color: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-width: 262px;
+  padding: 14px 18px;
+  border-radius: var(--border-radius-small);
+  z-index: 5;
+
+  @include desktop-above {
+    position: absolute;
+    translate: -50% 50%;
+  }
+
+  &__input {
+    padding-block: 5px;
+    border: none;
+    width: 160px;
+  }
+
+  &__body {
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 2px;
+  }
+
+  &__title {
+    align-self: flex-start;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+
+  &__button {
+    padding-inline: 16px;
+    height: 28px;
+    font-size: 13px;
+    border-radius: var(--border-radius-large);
+  }
+}
