@@ -1,0 +1,25 @@
+.button {
+  padding-inline: 31px;
+  height: var(--button-height);
+  border-radius: var(--border-radius-large);
+  color: var(--color-light);
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+
+  @include hover {
+    background-color: transparent;
+    color: var(--color-dark);
+  }
+
+  &--small {
+    padding-inline: 10px;
+    height: var(--button-height-small);
+    border-radius: var(--border-radius-small);
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: var(--color-dark);
+    border: none;
+  }
+}

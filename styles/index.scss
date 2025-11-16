@@ -1,0 +1,19 @@
+@import
+  'normalize',
+  'varibales',
+  'fonts',
+  'media',
+  'mixins',
+  'utils',
+  'globals';
+
+@import 
+  'blocks/button',
+  'blocks/header',
+  'blocks/section',
+  'blocks/hero',
+  'blocks/hero-form.scss',
+  'blocks/hero-partners',
+  'blocks/advantage',
+  'blocks/rating-card',
+  'blocks/advantages';

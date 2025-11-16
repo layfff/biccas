@@ -1,0 +1,17 @@
+.hero-partners {
+  text-align: center;
+  padding: var(--section-padding-y);
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    column-gap: 50px;
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+  }
+}

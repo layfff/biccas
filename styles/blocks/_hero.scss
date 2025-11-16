@@ -1,0 +1,124 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 152px;
+
+  @include desktop {
+    column-gap: 50px;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__body {
+    max-width: 555px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 61px;
+  }
+
+  &__title {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 481px;
+      height: 33px;
+      background: url('../../images/hero-line.svg');
+      top: 100%;
+      left: 1%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__description {
+    @include tablet-above {
+      max-width: 461px;
+    }
+  }
+
+  &__buttons {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+
+    @include tablet {
+      margin-bottom: 20px;
+      margin-inline: auto;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+  }
+
+  &__image-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      @include abs-center;
+
+      content: '';
+      position: absolute;
+      background: url('../../images/hero-card.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      translate: 100% 9%;
+      rotate: 15deg;
+      width: 146px;
+      height: 188px;
+      z-index: 5;
+
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+  }
+
+  &__total-income {
+    padding: 13px;
+    max-width: 151px;
+    background-color: var(--color-light);
+    z-index: 5;
+    border-radius: var(--border-radius-small);
+
+    svg {
+      color: #52BD94;
+    }
+
+    &-title {
+      font-size: 12px;
+      opacity: 0.5;
+    }
+
+    &-price {
+      margin-right: 28px;
+    }
+
+    @include desktop-above {
+      position: absolute;
+      translate: -15% 486%;
+    }
+  }
+}

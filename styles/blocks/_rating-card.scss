@@ -1,0 +1,13 @@
+.rating-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+
+  &__rating-dedicatet, &__name-company {
+    font-weight: 700;
+  }
+
+  &__name-company {
+    opacity: var(--opacity);
+  }
+}

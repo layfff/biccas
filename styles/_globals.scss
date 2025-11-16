@@ -1,0 +1,41 @@
+body {
+  @include fluid-text(18, 16);
+
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  font-family: var(--font-famaly-base);
+  font-weight: 500;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, .h1 {
+  @include fluid-text(80, 40);
+}
+
+h2, .h2 {
+  @include fluid-text(50, 34);
+}
+
+.h2-small {
+  @include fluid-text(40, 28);
+}
+
+h3, .h3 {
+  @include fluid-text(30, 26);
+}
+
+h4, .h4 {
+  @include fluid-text(28, 20);
+}

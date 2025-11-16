@@ -1,0 +1,27 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 27px;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    max-width: 644px;
+  }
+
+  &__description {
+    opacity: var(--opacity);
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+  }
+
+  &__pros {
+    max-width: 509px;
+  }
+}
