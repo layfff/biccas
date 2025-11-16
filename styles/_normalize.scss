@@ -177,6 +177,7 @@ button {
   [stroke^="url"]
 )) {
   stroke: currentColor;
+<<<<<<< HEAD
   
 }
 
@@ -190,6 +191,8 @@ button {
 
 .custom-icon-green[stroke]:not([stroke="none"]):not([stroke^="url"]) {
   stroke: #54BD95;
+=======
+>>>>>>> d43aba93d16d624c8b99563ee91bbe7525cff5e1
 }
 
 /**
