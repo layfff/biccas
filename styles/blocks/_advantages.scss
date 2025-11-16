@@ -4,6 +4,12 @@
   align-items: center;
   column-gap: 27px;
 
+  @include tablet {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 27px;
+  }
+
   &__body {
     display: flex;
     flex-direction: column;
@@ -19,9 +25,24 @@
     display: flex;
     align-items: center;
     column-gap: 80px;
+
+    @include tablet {
+      margin-inline: auto;
+    }
+
+    @include mobile-s {
+      flex-direction: column;
+      row-gap: 40px;
+    }
   }
 
   &__pros {
     max-width: 509px;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+    }
   }
 }

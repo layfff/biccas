@@ -1,0 +1,31 @@
+.features {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+      row-gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    max-width: 461px;
+    opacity: var(--opacity);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+      row-gap: 44px;
+    }
+  }
+}

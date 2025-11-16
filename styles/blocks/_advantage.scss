@@ -1,7 +1,11 @@
 .advantage {
   display: flex;
-  column-gap: 21px;
-  row-gap: 50px;
+  column-gap: 20px;
+
+  @include tablet {
+    flex-direction: column;
+    row-gap: 20px
+  }
 
   &__icon {
     @include square(60px);
@@ -11,6 +15,10 @@
     background-color: var(--color-light);
     box-shadow: var(--shadow);
     align-self: flex-start;
+
+    @include tablet {
+      align-self: center;
+    }
   }
 
   &__description {

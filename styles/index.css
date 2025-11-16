@@ -624,9 +624,14 @@ h4, .h4 {
 
 .advantage {
   display: flex;
-  -moz-column-gap: 21px;
-       column-gap: 21px;
-  row-gap: 50px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (max-width: 1023px) {
+  .advantage {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 .advantage__icon {
   width: 60px;
@@ -638,6 +643,11 @@ h4, .h4 {
   background-color: var(--color-light);
   box-shadow: var(--shadow);
   align-self: flex-start;
+}
+@media (max-width: 1023px) {
+  .advantage__icon {
+    align-self: center;
+  }
 }
 .advantage__description {
   opacity: var(--opacity);
@@ -662,6 +672,13 @@ h4, .h4 {
   -moz-column-gap: 27px;
        column-gap: 27px;
 }
+@media (max-width: 1023px) {
+  .advantages {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 27px;
+  }
+}
 .advantages__body {
   display: flex;
   flex-direction: column;
@@ -677,6 +694,70 @@ h4, .h4 {
   -moz-column-gap: 80px;
        column-gap: 80px;
 }
+@media (max-width: 1023px) {
+  .advantages__rating {
+    margin-inline: auto;
+  }
+}
+@media (max-width: 480px) {
+  .advantages__rating {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
 .advantages__pros {
   max-width: 509px;
+}
+.advantages__pros-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.features-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.features-card__image {
+  border-radius: var(--border-radius);
+}
+@media (max-width: 1023px) {
+  .features-card__image {
+    margin-inline: auto;
+  }
+}
+.features-card__description {
+  opacity: var(--opacity);
+}
+
+.features__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1023px) {
+  .features__header {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+}
+.features__description {
+  max-width: 461px;
+  opacity: var(--opacity);
+}
+.features__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 44px;
+       column-gap: 44px;
+}
+@media (max-width: 1023px) {
+  .features__list {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 44px;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,18 @@
+.features-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+
+  &__image {
+    border-radius: var(--border-radius);
+
+    @include tablet {
+      margin-inline: auto;
+    }
+  }
+
+  &__description {
+    opacity: var(--opacity);
+  }
+}
