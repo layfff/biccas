@@ -6,11 +6,7 @@
   background-color: var(--color-accent);
   border: 2px solid var(--color-accent);
 
-<<<<<<< HEAD
   @include hover {
-=======
-  &:hover {
->>>>>>> d43aba93d16d624c8b99563ee91bbe7525cff5e1
     background-color: transparent;
     color: var(--color-dark);
   }
