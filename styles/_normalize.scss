@@ -187,6 +187,10 @@ button {
   fill: #BBBBBB !important;
 }
 
+.custom-icon-green[fill]:not([fill="none"]):not([fill^="url"]) {
+  fill: #54BD95;
+}
+
 .custom-icon-green[stroke]:not([stroke="none"]):not([stroke^="url"]) {
   stroke: #54BD95;
 }

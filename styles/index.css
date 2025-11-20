@@ -180,6 +180,10 @@ button {
   fill: #BBBBBB !important;
 }
 
+.custom-icon-green[fill]:not([fill=none]):not([fill^=url]) {
+  fill: #54BD95;
+}
+
 .custom-icon-green[stroke]:not([stroke=none]):not([stroke^=url]) {
   stroke: #54BD95;
 }
@@ -288,6 +292,10 @@ svg * {
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-size: clamp(16px, 1.25vw, 18px);
   color: var(--color-dark);
@@ -358,6 +366,13 @@ h4, .h4 {
   background-color: transparent;
   color: var(--color-dark);
   border: none;
+}
+.button--elipce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 40px;
 }
 
 .header {
@@ -759,5 +774,111 @@ h4, .h4 {
     flex-direction: column;
     text-align: center;
     row-gap: 44px;
+  }
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1023px) {
+  .benefits {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+.benefits__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  width: 471px;
+}
+.benefits__list-item {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.benefits__image-wrapper {
+  position: relative;
+}
+.benefits__image-wrapper::after {
+  width: 634px;
+  aspect-ratio: 1;
+  content: "";
+  background-color: #54BE96;
+  border-radius: 50%;
+  translate: 50% -2%;
+  z-index: -10;
+  position: absolute;
+  filter: blur(300px);
+}
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.image-elements__element {
+  background-color: #fff;
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  z-index: 20;
+  border-radius: var(--border-radius-small);
+}
+@media (min-width: 1281px) {
+  .image-elements__element {
+    position: absolute;
+  }
+}
+.image-elements__element--first {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  width: 304px;
+  padding: 20px;
+}
+@media (min-width: 1281px) {
+  .image-elements__element--first {
+    top: 36px;
+    left: -30%;
+  }
+}
+.image-elements__element--first h4 {
+  font-size: 16px;
+}
+.image-elements__element--first p {
+  font-size: 12px;
+  opacity: var(--opacity);
+}
+.image-elements__element--second {
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+}
+@media (min-width: 1281px) {
+  .image-elements__element--second {
+    top: 121px;
+    right: -69px;
+  }
+}
+.image-elements__element--second .image-elements__total-income-title {
+  font-size: 12px;
+}
+.image-elements__element--thirt {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  padding: 22px 25px;
+  font-size: 18px;
+}
+@media (min-width: 1281px) {
+  .image-elements__element--thirt {
+    left: -50%;
+    bottom: -14px;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,60 @@
+.image-elements {
+  &__element {
+    background-color: #fff;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    z-index: 20;
+    border-radius: var(--border-radius-small);
+    @include desktop-above {
+      position: absolute;
+    }
+
+    &--first {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      width: 304px;
+      padding: 20px;
+      @include desktop-above {
+        top: 36px;
+        left: -30%;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+        opacity: var(--opacity);
+      }
+    }
+
+    &--second {
+      padding: 13px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 9px;
+      @include desktop-above {
+        top: 121px;
+        right: -69px;
+      }
+
+      .image-elements__total-income-title {
+        font-size: 12px;
+      }
+    }
+
+    &--thirt {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      padding: 22px 25px;
+      font-size: 18px;
+      @include desktop-above {
+        left: -50%;
+        bottom: -14px;
+      }
+    }
+  }
+}
