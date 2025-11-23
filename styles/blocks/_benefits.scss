@@ -24,6 +24,21 @@
   &__image-wrapper {
     position: relative;
 
+    &::before {
+      @include square(40px);
+
+      content: '';
+      position: absolute;
+      background-color: #74C9A9;
+      background-image: url(../../images/icons/image.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 50%;
+      left: -15%;
+      rotate: -15deg;
+      border-radius: var(--border-radius-small);
+    }
+
     &::after {
       @include square(634px);
 
@@ -34,6 +49,10 @@
       z-index: -10;
       position: absolute;
       filter: blur(300px);
+
+      @include tablet {
+        display: none;
+      }
     }
   }
 

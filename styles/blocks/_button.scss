@@ -30,4 +30,18 @@
     padding: 12px;
     height: 40px;
   }
+
+  &--plan {
+    padding-inline: 65px;
+    height: 64px;
+    font-size: 18px;
+    border-radius: var(--border-radius);
+  }
+
+  &--plan-transparent {
+    background-color: transparent;
+    box-shadow: var(--shadow);
+    border: none;
+    color: var(--color-dark);
+  }
 }
