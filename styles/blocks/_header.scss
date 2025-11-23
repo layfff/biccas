@@ -12,6 +12,10 @@
     z-index: -100;
     translate: -50% -50%;
     filter: blur(400px);
+
+    @include tablet {
+      display: none;
+    }
   }
 
   @include desktop {
