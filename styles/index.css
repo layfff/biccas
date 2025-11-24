@@ -1017,9 +1017,29 @@ h4, .h4 {
   color: var(--color-light);
   height: 690px;
   padding-inline: 20px;
+  overflow: hidden;
+  position: relative;
 }
 .plan-card--recommended ul {
   margin-bottom: 10px;
+}
+.plan-card--recommended .plan-card__block-background, .plan-card--recommended .plan-card__price-recommended, .plan-card--recommended .plan-card__save, .plan-card--recommended ul, .plan-card--recommended svg {
+  position: relative;
+  z-index: 5;
+}
+.plan-card--recommended::before {
+  width: 600px;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  content: "";
+  background-color: #6BC2A1;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  top: 65%;
 }
 .plan-card__block-background {
   background-color: var(--color-light);

@@ -67,8 +67,32 @@
     color: var(--color-light);
     height: 690px;
     padding-inline: 20px;
+    overflow: hidden;
+    position: relative;
+
     ul {
       margin-bottom: 10px;
+    }
+
+    & .plan-card__block-background,
+    & .plan-card__price-recommended,
+    & .plan-card__save,
+    & ul,
+    & svg {
+      position: relative;
+      z-index: 5;
+    }
+
+    &::before {
+      @include square(600px);
+      @include abs-center;
+
+      content: '';
+      background-color: #6BC2A1;
+      position: absolute;
+      z-index: 1;
+      border-radius: 50%;
+      top: 65%;
     }
   }
 
