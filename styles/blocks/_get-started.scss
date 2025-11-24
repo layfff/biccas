@@ -22,4 +22,20 @@
     flex-direction: column;
     row-gap: 20px;
   }
+
+  &__free-trial {
+    align-self: flex-end;
+  }
+
+  &__text-opacity {
+    opacity: var(--opacity);
+  }
+
+  &__button {
+    border-radius: var(--border-radius-small);
+
+    @include hover {
+      color: var(--color-light);
+    }
+  }
 }

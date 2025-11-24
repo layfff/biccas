@@ -1,0 +1,90 @@
+.footer {
+  background-color: var(--color-dark-alt);
+  color: var(--color-gray);
+  padding-top: 100px;
+  padding-bottom: 43px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include desktop {
+      text-align: center;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 64px;
+
+    @include desktop {
+      text-align: center;
+      flex-direction: column;
+      row-gap: 50px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &-title {
+      color: var(--color-light);
+      margin-bottom: 10px;
+    }
+
+    a {
+      @include hover {
+        color: var(--color-light);
+      }
+    }
+  }
+
+  &__button {
+    padding: 15px;
+    height: 46px;
+    position: absolute;
+    top: 12%;
+    right: 2%;
+
+    @include hover {
+      color: var(--color-light);
+    }
+  }
+
+  &__form {
+    position: relative;
+    max-width: 450px;
+  }
+
+  &__bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-light);
+
+    @include mobile {
+      flex-direction: column;
+      
+    }
+
+    a {
+      @include hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
