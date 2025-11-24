@@ -611,6 +611,22 @@ h4, .h4 {
     display: none;
   }
 }
+.hero__image-block::after {
+  width: 634px;
+  aspect-ratio: 1;
+  content: "";
+  background-color: #54BE96;
+  border-radius: 50%;
+  translate: 50% -2%;
+  z-index: -10;
+  position: absolute;
+  filter: blur(300px);
+}
+@media (max-width: 1023px) {
+  .hero__image-block::after {
+    display: none;
+  }
+}
 .hero__image {
   position: relative;
 }
@@ -1015,6 +1031,12 @@ h4, .h4 {
     padding: 0;
     margin-inline: auto;
   }
+}
+.plan-card__description {
+  opacity: var(--opacity);
+}
+.plan-card__description--no-opacity {
+  opacity: 1;
 }
 .plan-card__price {
   font-size: 50px;

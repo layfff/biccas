@@ -17,6 +17,14 @@
     margin-inline: auto;
   }
 
+  &__description {
+    opacity: var(--opacity);
+
+    &--no-opacity {
+      opacity: 1;
+    }
+  }
+
   &__price {
     font-size: 50px;
     position: relative;

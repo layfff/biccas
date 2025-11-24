@@ -90,6 +90,22 @@
         display: none;
       }
     }
+
+    &::after {
+      @include square(634px);
+
+      content: '';
+      background-color: #54BE96;
+      border-radius: 50%;
+      translate: 50% -2%;
+      z-index: -10;
+      position: absolute;
+      filter: blur(300px);
+
+      @include tablet {
+        display: none;
+      }
+    }
   }
 
   &__image {
