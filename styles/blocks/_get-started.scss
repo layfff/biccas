@@ -1,0 +1,25 @@
+.get-started {
+  background-color: var(--color-dark-blue);
+  color: var(--color-light);
+  padding: 40px 86px 66px 86px;
+  text-align: center;
+  border-radius: var(--border-radius);
+
+  @include mobile {
+    padding: 20px 15px 30px 15px;
+  }
+
+  @include mobile-s {
+    padding: 15px 5px 20px 5px;
+  }
+
+  &__image {
+    margin-inline: auto;
+  }
+
+  &__form-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

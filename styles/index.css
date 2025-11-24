@@ -180,6 +180,10 @@ button {
   fill: #BBBBBB !important;
 }
 
+.custom-icon-gray-alt[fill]:not([fill=none]):not([fill^=url]) {
+  fill: #d9d9d9 !important;
+}
+
 .custom-icon-green[fill]:not([fill=none]):not([fill^=url]) {
   fill: #54BD95;
 }
@@ -372,7 +376,6 @@ h4, .h4 {
   justify-content: center;
   align-items: center;
   padding: 12px;
-  height: 40px;
 }
 .button--plan {
   padding-inline: 65px;
@@ -385,6 +388,29 @@ h4, .h4 {
   box-shadow: var(--shadow);
   border: none;
   color: var(--color-dark);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  row-gap: 20px;
+}
+.field__input {
+  width: 440px;
+  height: 50px;
+  padding: 17px 20px;
+  border-radius: var(--border-radius-small);
+  border: none;
+}
+@media (max-width: 480px) {
+  .field__input {
+    width: 330px;
+  }
+}
+.field__input--textarea {
+  height: 80px;
+  resize: none;
 }
 
 .header {
@@ -469,8 +495,11 @@ h4, .h4 {
 .section {
   padding-block: var(--section-padding-y);
 }
-.section--alt-bg {
+.section--light-alt-bg {
   background-color: var(--color-light-alt);
+}
+.section--dark-bg {
+  background-color: var(--color-dark-alt);
 }
 
 .hero {
@@ -925,6 +954,9 @@ h4, .h4 {
     bottom: -14px;
   }
 }
+.image-elements__button {
+  height: 40px;
+}
 
 .toggle {
   background-color: var(--color-light);
@@ -1077,4 +1109,88 @@ h4, .h4 {
   .plan__cards {
     flex-direction: column;
   }
+}
+
+.get-started {
+  background-color: var(--color-dark-blue);
+  color: var(--color-light);
+  padding: 40px 86px 66px 86px;
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+@media (max-width: 767px) {
+  .get-started {
+    padding: 20px 15px 30px 15px;
+  }
+}
+@media (max-width: 480px) {
+  .get-started {
+    padding: 15px 5px 20px 5px;
+  }
+}
+.get-started__image {
+  margin-inline: auto;
+}
+.get-started__form-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.quote {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.quote__accounts-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (max-width: 1280px) {
+  .quote__accounts-list {
+    justify-content: center;
+  }
+}
+.quote__button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+@media (hover: hover) {
+  .quote__button:hover {
+    color: var(--color-light);
+    scale: 1.05;
+  }
+}
+@media (hover: none) {
+  .quote__button:active {
+    color: var(--color-light);
+    scale: 1.05;
+  }
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1280px) {
+  .reviews {
+    flex-direction: column;
+    row-gap: 40px;
+    text-align: center;
+  }
+}
+.reviews__title {
+  color: var(--color-light);
+}
+.reviews__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 466px;
+  color: var(--color-gray);
 }/*# sourceMappingURL=index.css.map */

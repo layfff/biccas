@@ -1,7 +1,11 @@
 .section {
   padding-block: var(--section-padding-y);
 
-  &--alt-bg {
+  &--light-alt-bg {
     background-color: var(--color-light-alt);
+  }
+
+  &--dark-bg {
+    background-color: var(--color-dark-alt);
   }
 }
