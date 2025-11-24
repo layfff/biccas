@@ -1,4 +1,4 @@
-# SaaS Landing Page
+# Biccas Landing Page
 
 Проект выполнен по макету Figma:
 [https://www.figma.com/design/TgbIB0O7pWJu4ZmsDLadfr/Saas-Landing-Pages--Community-?node-id=0-7](https://www.figma.com/design/TgbIB0O7pWJu4ZmsDLadfr/Saas-Landing-Pages--Community-?node-id=0-7)
@@ -16,7 +16,7 @@
 ## 📁 Структура проекта
 
 ```
-project/
+biccas/
 ├── fonts/        # Шрифты проекта
 ├── img/          # Все изображения: фото, иллюстрации, иконки
 ├── styles/
